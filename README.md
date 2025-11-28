@@ -32,8 +32,6 @@ cd CladeSkillDemo
 ```
 
 **Note:** Throughout the documentation, paths like `/Users/<username>/CladeSkillDemo/analytics/` are shown with `<username>` as a placeholder. Replace `<username>` with your actual username. For example:
-- If your username is `john`, the path would be: `/Users/john/CladeSkillDemo/analytics/`
-- If your username is `alice`, the path would be: `/Users/alice/CladeSkillDemo/analytics/`
 
 ## ⚡ Quick Start
 
