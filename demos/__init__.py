@@ -1,2 +1,0 @@
-"""Demo scenarios and comparisons"""
-
