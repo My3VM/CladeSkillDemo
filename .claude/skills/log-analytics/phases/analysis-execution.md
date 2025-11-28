@@ -167,7 +167,7 @@ results_path = "/private/tmp/results.json"       # WRONG!
 - Keeps sensitive analysis data within secure project directory
 
 **Verification:**
-After saving, confirm the file path is: `/Users/maivishw/ClaudeSkillsSDK/analytics/analysis_results_*.json`
+After saving, confirm the file path is: `/Users/<username>/CladeSkillDemo/analytics/analysis_results_*.json`
 NOT `/tmp/` or `/private/tmp/`
 
 ---

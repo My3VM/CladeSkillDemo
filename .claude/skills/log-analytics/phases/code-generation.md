@@ -161,7 +161,7 @@ script_path = "/tmp/parse_logs.py"                   # WRONG!
 - All analysis artifacts stay within secure project directory
 
 **Verification:**
-After saving, confirm the file path is: `/Users/maivishw/ClaudeSkillsSDK/analytics/parse_logs_*.py`
+After saving, confirm the file path is: `/Users/<username>/CladeSkillDemo/analytics/parse_logs_*.py`
 NOT `/tmp/` or `/private/tmp/`
 
 ---

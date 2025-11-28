@@ -64,7 +64,7 @@ Content: The full JSON response from get_raw_logs
 ```
 
 **Verification:**
-After saving, confirm the file path is: `/Users/maivishw/ClaudeSkillsSDK/analytics/incident_logs.json`
+After saving, confirm the file path is: `/Users/<username>/CladeSkillDemo/analytics/incident_logs.json`
 NOT `/tmp/` or `/private/tmp/`
 
 ---
