@@ -1,0 +1,131 @@
+================================================================================
+INCIDENT ANALYSIS REPORT: INC-2025-001
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Total Log Entries: 10
+Overall Error Rate: 40.00%
+Total Errors: 4
+Total Warnings: 2
+Critical Anomalies Detected: 2
+
+ERROR RATE ANALYSIS BY SERVICE
+--------------------------------------------------------------------------------
+
+auth-service:
+  Total Requests: 4
+  Errors: 4 (100.00%)
+  Warnings: 0 (0.00%)
+
+api-gateway:
+  Total Requests: 2
+  Errors: 0 (0.00%)
+  Warnings: 2 (100.00%)
+
+product-service:
+  Total Requests: 2
+  Errors: 0 (0.00%)
+  Warnings: 0 (0.00%)
+
+user-service:
+  Total Requests: 1
+  Errors: 0 (0.00%)
+  Warnings: 0 (0.00%)
+
+search-service:
+  Total Requests: 1
+  Errors: 0 (0.00%)
+  Warnings: 0 (0.00%)
+
+ERROR TYPE DISTRIBUTION
+--------------------------------------------------------------------------------
+OTHER: 4 (100.0%)
+
+TEMPORAL PATTERN ANALYSIS
+--------------------------------------------------------------------------------
+Analysis Time Span: 0.05 hours
+Total Errors: 4
+Average Time Between Errors: 60.0 seconds
+Median Time Between Errors: 60.0 seconds
+
+AUTH_TIMEOUT Pattern:
+  Occurrences: 0
+  Average Interval: 0.0 minutes
+
+DB_POOL_EXHAUSTED Pattern:
+  Occurrences: 0
+  Average Interval: 0.0 minutes
+
+RESPONSE TIME ANALYSIS
+--------------------------------------------------------------------------------
+
+auth-service:
+  Average: 4825.0ms
+  Median: 4850.0ms
+  Max: 5100.0ms
+  Std Dev: 275.4ms
+  Error Avg: 4825.0ms
+  Warning Avg: 0.0ms
+  Normal Avg: 0.0ms
+
+api-gateway:
+  Average: 850.0ms
+  Median: 850.0ms
+  Max: 890.0ms
+  Std Dev: 56.6ms
+  Error Avg: 0.0ms
+  Warning Avg: 850.0ms
+  Normal Avg: 0.0ms
+
+search-service:
+  Average: 230.0ms
+  Median: 230.0ms
+  Max: 230.0ms
+  Std Dev: 0.0ms
+  Error Avg: 0.0ms
+  Warning Avg: 0.0ms
+  Normal Avg: 230.0ms
+
+product-service:
+  Average: 135.0ms
+  Median: 135.0ms
+  Max: 150.0ms
+  Std Dev: 21.2ms
+  Error Avg: 0.0ms
+  Warning Avg: 0.0ms
+  Normal Avg: 135.0ms
+
+user-service:
+  Average: 95.0ms
+  Median: 95.0ms
+  Max: 95.0ms
+  Std Dev: 0.0ms
+  Error Avg: 0.0ms
+  Warning Avg: 0.0ms
+  Normal Avg: 95.0ms
+
+DETECTED ANOMALIES
+--------------------------------------------------------------------------------
+
+CRITICAL (2):
+  - [HIGH_ERROR_RATE] Overall error rate of 40.00% exceeds threshold of 2%
+  - [EXTREME_RESPONSE_TIME] auth-service response time of 5100ms at 2025-11-27T18:32:44.608219
+
+HIGH (1):
+  - [SERVICE_HIGH_ERROR_RATE] auth-service has error rate of 100.00%
+
+MEDIUM (2):
+  Total: 2 slow response warnings detected
+
+RECOMMENDATIONS
+--------------------------------------------------------------------------------
+3. Performance Optimization:
+   - Services with high response times: auth-service
+   - Add caching layer for frequently accessed data
+   - Implement request rate limiting
+   - Consider horizontal scaling for affected services
+
+================================================================================
+END OF REPORT
+================================================================================

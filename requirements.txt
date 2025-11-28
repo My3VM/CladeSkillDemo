@@ -1,0 +1,17 @@
+# Core Dependencies
+claude-agent-sdk==0.1.6         # Claude Agent SDK with Skills and Tool Use
+python-dotenv>=1.0.0            # Environment variable management
+
+# MCP SDK and Server Dependencies
+mcp>=1.0.0                      # Model Context Protocol SDK (includes FastMCP)
+
+# CLI and Output Formatting
+rich>=13.9.0                    # Beautiful terminal output for demos
+
+# Web UI Dependencies
+fastapi>=0.104.0                # Web framework for UI
+uvicorn>=0.24.0                 # ASGI server
+websockets>=12.0                # WebSocket support for real-time streaming
+
+# Utilities
+asyncio>=3.4.3                  # Async support for MCP servers
